@@ -1,0 +1,10 @@
+$ORIGIN example.com.
+$TTL 300
+@       IN SOA ns1 admin 2024010101 7200 3600 1209600 300
+@       IN NS  ns1
+ns1     IN A   192.0.2.1
+www     IN A   192.0.2.10
+api     IN CNAME www
+sub     IN NS  ns1
+d       IN DNAME target
+target  IN A   192.0.2.30
